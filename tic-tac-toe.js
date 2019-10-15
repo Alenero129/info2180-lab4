@@ -27,13 +27,13 @@ function reset() {
         console.log(this+"HI");
 
         if (count%2 == 0) {
+          this.classList.add('X');
           this.innerText = 'X';
-          this.classList.add('square.X');
           check('X');
         }
         else {
+          this.classList.add('O');
           this.innerText = 'O';
-          this.classList.add('square.O');
           check('O');
         }
       }
